@@ -1,0 +1,168 @@
+country,gdpp,income,child_mort,life_expec,KMeans_Cluster,DBSCAN_Cluster,Segment,dev_label
+Afghanistan,553,1610,90.2,56.2,1,0,At-Risk (Underdeveloped),Underdeveloped
+Albania,4090,9930,16.6,76.3,2,0,Growth (Developing),Developing
+Algeria,4460,12900,27.3,76.5,2,0,Growth (Developing),Developing
+Angola,3530,5900,119.0,60.1,1,0,At-Risk (Underdeveloped),Underdeveloped
+Antigua and Barbuda,12200,19100,10.3,76.8,2,0,Growth (Developing),Developed
+Argentina,10300,18700,14.5,75.8,2,0,Growth (Developing),Developed
+Armenia,3220,6700,18.1,73.3,2,0,Growth (Developing),Developing
+Australia,51900,41400,4.8,82.0,0,0,High-Value (Developed),Developed
+Austria,46900,43200,4.3,80.5,0,0,High-Value (Developed),Developed
+Azerbaijan,5840,16000,39.2,69.1,2,0,Growth (Developing),Developing
+Bahamas,28000,22900,13.8,73.8,2,0,Growth (Developing),Developed
+Bahrain,20700,41100,8.6,76.0,0,0,High-Value (Developed),Developed
+Bangladesh,758,2440,49.4,70.4,2,0,Growth (Developing),Underdeveloped
+Barbados,16000,15300,14.2,76.7,2,0,Growth (Developing),Developed
+Belarus,6030,16200,5.5,70.4,2,0,Growth (Developing),Developing
+Belgium,44400,41100,4.5,80.0,0,0,High-Value (Developed),Developed
+Belize,4340,7880,18.8,71.4,2,0,Growth (Developing),Developing
+Benin,758,1820,111.0,61.8,1,0,At-Risk (Underdeveloped),Underdeveloped
+Bhutan,2180,6420,42.7,72.1,2,0,Growth (Developing),Developing
+Bolivia,1980,5410,46.6,71.6,2,0,Growth (Developing),Developing
+Bosnia and Herzegovina,4610,9720,6.9,76.8,2,0,Growth (Developing),Developing
+Botswana,6350,13300,52.5,57.1,1,0,At-Risk (Underdeveloped),Underdeveloped
+Brazil,11200,14500,19.8,74.2,2,0,Growth (Developing),Developing
+Brunei,35300,80600,10.5,77.1,0,0,High-Value (Developed),Developed
+Bulgaria,6840,15300,10.8,73.9,2,0,Growth (Developing),Developing
+Burkina Faso,575,1430,116.0,57.9,1,0,At-Risk (Underdeveloped),Underdeveloped
+Burundi,231,764,93.6,57.7,1,0,At-Risk (Underdeveloped),Underdeveloped
+Cambodia,786,2520,44.4,66.1,2,0,Growth (Developing),Underdeveloped
+Cameroon,1310,2660,108.0,57.3,1,0,At-Risk (Underdeveloped),Underdeveloped
+Canada,47400,40700,5.6,81.3,0,0,High-Value (Developed),Developed
+Cape Verde,3310,5830,26.5,72.5,2,0,Growth (Developing),Developing
+Central African Republic,446,888,149.0,47.5,1,0,At-Risk (Underdeveloped),Underdeveloped
+Chad,897,1930,150.0,56.5,1,0,At-Risk (Underdeveloped),Underdeveloped
+Chile,12900,19400,8.7,79.1,2,0,Growth (Developing),Developed
+China,4560,9530,15.7,74.6,2,0,Growth (Developing),Developing
+Colombia,6250,10900,18.6,76.4,2,0,Growth (Developing),Developing
+Comoros,769,1410,88.2,65.9,1,0,At-Risk (Underdeveloped),Underdeveloped
+"Congo, Dem. Rep.",334,609,116.0,57.5,1,0,At-Risk (Underdeveloped),Underdeveloped
+"Congo, Rep.",2740,5190,63.9,60.4,1,0,At-Risk (Underdeveloped),Underdeveloped
+Costa Rica,8200,13000,10.2,80.4,2,0,Growth (Developing),Developed
+Cote d'Ivoire,1220,2690,111.0,56.3,1,0,At-Risk (Underdeveloped),Underdeveloped
+Croatia,13500,20100,5.5,76.3,2,0,Growth (Developing),Developed
+Cyprus,30800,33900,3.6,79.9,0,0,High-Value (Developed),Developed
+Czech Republic,19800,28300,3.4,77.5,0,0,High-Value (Developed),Developed
+Denmark,58000,44000,4.1,79.5,0,0,High-Value (Developed),Developed
+Dominican Republic,5450,11100,34.4,74.6,2,0,Growth (Developing),Developing
+Ecuador,4660,9350,25.1,76.7,2,0,Growth (Developing),Developing
+Egypt,2600,9860,29.1,70.5,2,0,Growth (Developing),Developing
+El Salvador,2990,7300,19.2,74.1,2,0,Growth (Developing),Developing
+Equatorial Guinea,17100,33700,111.0,60.9,1,0,At-Risk (Underdeveloped),Underdeveloped
+Eritrea,482,1420,55.2,61.7,1,0,At-Risk (Underdeveloped),Underdeveloped
+Estonia,14600,22700,4.5,76.0,2,0,Growth (Developing),Developed
+Fiji,3650,7350,24.1,65.3,2,0,Growth (Developing),Developing
+Finland,46200,39800,3.0,80.0,0,0,High-Value (Developed),Developed
+France,40600,36900,4.2,81.4,0,0,High-Value (Developed),Developed
+Gabon,8750,15400,63.7,62.9,1,0,At-Risk (Underdeveloped),Underdeveloped
+Gambia,562,1660,80.3,65.5,1,0,At-Risk (Underdeveloped),Underdeveloped
+Georgia,2960,6730,16.5,72.8,2,0,Growth (Developing),Developing
+Germany,41800,40400,4.2,80.1,0,0,High-Value (Developed),Developed
+Ghana,1310,3060,74.7,62.2,1,0,At-Risk (Underdeveloped),Underdeveloped
+Greece,26900,28700,3.9,80.4,0,0,High-Value (Developed),Developed
+Grenada,7370,11200,14.6,71.3,2,0,Growth (Developing),Developing
+Guatemala,2830,6710,35.4,71.3,2,0,Growth (Developing),Developing
+Guinea,648,1190,109.0,58.0,1,0,At-Risk (Underdeveloped),Underdeveloped
+Guinea-Bissau,547,1390,114.0,55.6,1,0,At-Risk (Underdeveloped),Underdeveloped
+Guyana,3040,5840,37.6,65.5,2,0,Growth (Developing),Developing
+Haiti,662,1500,208.0,32.1,1,-1,At-Risk (Underdeveloped),Underdeveloped
+Hungary,13100,22300,6.0,74.5,2,0,Growth (Developing),Developed
+Iceland,41900,38800,2.6,82.0,0,0,High-Value (Developed),Developed
+India,1350,4410,58.8,66.2,2,0,Growth (Developing),Underdeveloped
+Indonesia,3110,8430,33.3,69.9,2,0,Growth (Developing),Developing
+Iran,6530,17400,19.3,74.5,2,0,Growth (Developing),Developing
+Iraq,4500,12700,36.9,67.2,1,0,At-Risk (Underdeveloped),Developing
+Ireland,48700,45700,4.2,80.4,0,0,High-Value (Developed),Developed
+Israel,30600,29600,4.6,81.4,0,0,High-Value (Developed),Developed
+Italy,35800,36200,4.0,81.7,0,0,High-Value (Developed),Developed
+Jamaica,4680,8000,18.1,74.7,2,0,Growth (Developing),Developing
+Japan,44500,35800,3.2,82.8,0,0,High-Value (Developed),Developed
+Jordan,3680,9470,21.1,75.8,2,0,Growth (Developing),Developing
+Kazakhstan,9070,20100,21.5,68.4,2,0,Growth (Developing),Developing
+Kenya,967,2480,62.2,62.8,1,0,At-Risk (Underdeveloped),Underdeveloped
+Kiribati,1490,1730,62.7,60.7,1,0,At-Risk (Underdeveloped),Underdeveloped
+Kuwait,38500,75200,10.8,78.2,0,0,High-Value (Developed),Developed
+Kyrgyz Republic,880,2790,29.6,68.5,2,0,Growth (Developing),Developing
+Lao,1140,3980,78.9,63.8,1,0,At-Risk (Underdeveloped),Underdeveloped
+Latvia,11300,18300,7.8,73.1,2,0,Growth (Developing),Developed
+Lebanon,8860,16300,10.3,79.8,2,0,Growth (Developing),Developed
+Lesotho,1170,2380,99.7,46.5,1,0,At-Risk (Underdeveloped),Underdeveloped
+Liberia,327,700,89.3,60.8,1,0,At-Risk (Underdeveloped),Underdeveloped
+Libya,12100,29600,16.6,76.1,2,0,Growth (Developing),Developed
+Lithuania,12000,21100,6.1,73.2,2,0,Growth (Developing),Developed
+Luxembourg,105000,91700,2.8,81.3,0,-1,High-Value (Developed),Developed
+"Macedonia, FYR",4540,11400,10.4,74.0,2,0,Growth (Developing),Developing
+Madagascar,413,1390,62.2,60.8,1,0,At-Risk (Underdeveloped),Underdeveloped
+Malawi,459,1030,90.5,53.1,1,0,At-Risk (Underdeveloped),Underdeveloped
+Malaysia,9070,21100,7.9,74.5,2,0,Growth (Developing),Developed
+Maldives,7100,10500,13.2,77.9,2,0,Growth (Developing),Developing
+Mali,708,1870,137.0,59.5,1,0,At-Risk (Underdeveloped),Underdeveloped
+Malta,21100,28300,6.8,80.3,0,-1,High-Value (Developed),Developed
+Mauritania,1200,3320,97.4,68.2,1,0,At-Risk (Underdeveloped),Underdeveloped
+Mauritius,8000,15900,15.0,73.4,2,0,Growth (Developing),Developing
+"Micronesia, Fed. Sts.",2860,3340,40.0,65.4,2,0,Growth (Developing),Underdeveloped
+Moldova,1630,3910,17.2,69.7,2,0,Growth (Developing),Developing
+Mongolia,2650,7710,26.1,66.2,2,0,Growth (Developing),Developing
+Montenegro,6680,14000,6.8,76.4,2,0,Growth (Developing),Developing
+Morocco,2830,6440,33.5,73.5,2,0,Growth (Developing),Developing
+Mozambique,419,918,101.0,54.5,1,0,At-Risk (Underdeveloped),Underdeveloped
+Myanmar,988,3720,64.4,66.8,2,0,Growth (Developing),Underdeveloped
+Namibia,5190,8460,56.0,58.6,1,0,At-Risk (Underdeveloped),Underdeveloped
+Nepal,592,1990,47.0,68.3,2,0,Growth (Developing),Underdeveloped
+Netherlands,50300,45500,4.5,80.7,0,0,High-Value (Developed),Developed
+New Zealand,33700,32300,6.2,80.9,0,0,High-Value (Developed),Developed
+Niger,348,814,123.0,58.8,1,0,At-Risk (Underdeveloped),Underdeveloped
+Nigeria,2330,5150,130.0,60.5,1,-1,At-Risk (Underdeveloped),Underdeveloped
+Norway,87800,62300,3.2,81.0,0,0,High-Value (Developed),Developed
+Oman,19300,45300,11.7,76.1,2,0,Growth (Developing),Developed
+Pakistan,1040,4280,92.1,65.3,1,0,At-Risk (Underdeveloped),Underdeveloped
+Panama,8080,15400,19.7,77.8,2,0,Growth (Developing),Developing
+Paraguay,3230,7290,24.1,74.1,2,0,Growth (Developing),Developing
+Peru,5020,9960,20.3,77.9,2,0,Growth (Developing),Developing
+Philippines,2130,5600,31.9,69.0,2,0,Growth (Developing),Developing
+Poland,12600,21800,6.0,76.3,2,0,Growth (Developing),Developed
+Portugal,22500,27200,3.9,79.8,0,0,High-Value (Developed),Developed
+Qatar,70300,125000,9.0,79.5,0,-1,High-Value (Developed),Developed
+Romania,8230,17800,11.5,73.7,2,0,Growth (Developing),Developing
+Russia,10700,23100,10.0,69.2,2,0,Growth (Developing),Developing
+Rwanda,563,1350,63.6,64.6,1,0,At-Risk (Underdeveloped),Underdeveloped
+Samoa,3450,5400,18.9,71.5,2,0,Growth (Developing),Developing
+Saudi Arabia,19300,45400,15.7,75.1,2,0,Growth (Developing),Developed
+Senegal,1000,2180,66.8,64.0,1,0,At-Risk (Underdeveloped),Underdeveloped
+Serbia,5410,12700,7.6,74.7,2,0,Growth (Developing),Developing
+Seychelles,10800,20400,14.4,73.4,2,0,Growth (Developing),Developing
+Sierra Leone,399,1220,160.0,55.0,1,0,At-Risk (Underdeveloped),Underdeveloped
+Singapore,46600,72100,2.8,82.7,0,-1,High-Value (Developed),Developed
+Slovak Republic,16600,25200,7.0,75.5,0,0,High-Value (Developed),Developed
+Slovenia,23400,28700,3.2,79.5,0,0,High-Value (Developed),Developed
+Solomon Islands,1290,1780,28.1,61.7,2,0,Growth (Developing),Underdeveloped
+South Africa,7280,12000,53.7,54.3,1,0,At-Risk (Underdeveloped),Underdeveloped
+South Korea,22100,30400,4.1,80.1,0,0,High-Value (Developed),Developed
+Spain,30700,32500,3.8,81.9,0,0,High-Value (Developed),Developed
+Sri Lanka,2810,8560,11.2,74.4,2,0,Growth (Developing),Developing
+St. Vincent and the Grenadines,6230,9920,20.7,71.6,2,0,Growth (Developing),Developing
+Sudan,1480,3370,76.7,66.3,1,0,At-Risk (Underdeveloped),Underdeveloped
+Suriname,8300,14200,24.1,70.3,2,0,Growth (Developing),Developing
+Sweden,52100,42900,3.0,81.5,0,0,High-Value (Developed),Developed
+Switzerland,74600,55500,4.5,82.2,0,0,High-Value (Developed),Developed
+Tajikistan,738,2110,52.4,69.6,2,0,Growth (Developing),Underdeveloped
+Tanzania,702,2090,71.9,59.3,1,0,At-Risk (Underdeveloped),Underdeveloped
+Thailand,5080,13500,14.9,76.6,2,0,Growth (Developing),Developing
+Timor-Leste,3600,1850,62.6,71.1,1,0,At-Risk (Underdeveloped),Underdeveloped
+Togo,488,1210,90.3,58.7,1,0,At-Risk (Underdeveloped),Underdeveloped
+Tonga,3550,4980,17.4,69.9,2,0,Growth (Developing),Developing
+Tunisia,4140,10400,17.4,76.9,2,0,Growth (Developing),Developing
+Turkey,10700,18000,19.1,78.2,2,0,Growth (Developing),Developed
+Turkmenistan,4440,9940,62.0,67.9,2,0,Growth (Developing),Underdeveloped
+Uganda,595,1540,81.0,56.8,1,0,At-Risk (Underdeveloped),Underdeveloped
+Ukraine,2970,7820,11.7,70.4,2,0,Growth (Developing),Developing
+United Arab Emirates,35000,57600,8.6,76.5,0,0,High-Value (Developed),Developed
+United Kingdom,38900,36200,5.2,80.3,0,0,High-Value (Developed),Developed
+United States,48400,49400,7.3,78.7,0,0,High-Value (Developed),Developed
+Uruguay,11900,17100,10.6,76.4,2,0,Growth (Developing),Developed
+Uzbekistan,1380,4240,36.3,68.8,2,0,Growth (Developing),Developing
+Vanuatu,2970,2950,29.2,63.0,2,0,Growth (Developing),Underdeveloped
+Venezuela,13500,16500,17.1,75.4,2,0,Growth (Developing),Developed
+Vietnam,1310,4490,23.3,73.1,2,0,Growth (Developing),Developing
+Yemen,1310,4480,56.3,67.5,1,0,At-Risk (Underdeveloped),Underdeveloped
+Zambia,1460,3280,83.1,52.0,1,0,At-Risk (Underdeveloped),Underdeveloped
