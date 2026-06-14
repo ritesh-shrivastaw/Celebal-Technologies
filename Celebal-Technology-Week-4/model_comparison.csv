@@ -1,0 +1,4 @@
+Model,Test Accuracy,Test Loss
+ANN,0.4458,1.5948
+CNN,0.6771,1.2083
+Augmented CNN,0.6164,1.0952
