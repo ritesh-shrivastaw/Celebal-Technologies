@@ -1,0 +1,4 @@
+Model,Final Loss,Final Accuracy,Generated Text (seed='deep learning')
+Vanilla RNN,0.8166,0.8857,deep learning is transforming artificial intelligence sentences
+LSTM,1.6497,0.5714,deep learning learning models generate generate sentences
+GRU,1.3444,0.6857,deep learning is faster and than lstm
