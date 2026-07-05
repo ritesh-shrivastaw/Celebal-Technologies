@@ -1,0 +1,18 @@
+Deep learning is a subset of machine learning that uses neural networks with many layers.
+It has revolutionized fields like computer vision, natural language processing, and speech recognition.
+
+Convolutional Neural Networks (CNNs) are used for image classification tasks.
+They use filters to detect edges, shapes, and textures in images.
+CNNs consist of convolution layers, pooling layers, and fully connected layers.
+
+Recurrent Neural Networks (RNNs) are designed for sequential data like text and time series.
+They maintain a hidden state that captures information from previous steps.
+LSTM and GRU are improved versions of RNNs that solve the vanishing gradient problem.
+
+Transfer learning allows models trained on large datasets to be reused for new tasks.
+This reduces training time and improves performance with limited data.
+Popular pre-trained models include VGG, ResNet, BERT, and GPT.
+
+Retrieval-Augmented Generation (RAG) combines retrieval systems with language models.
+It retrieves relevant documents first and then generates answers grounded in those documents.
+RAG improves factual accuracy and works well for private or domain-specific data.
