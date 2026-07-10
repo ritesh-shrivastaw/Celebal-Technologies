@@ -1,0 +1,38 @@
+INSURANCE AND PRE-AUTHORISATION POLICY — Version 3.5 | Effective: February 2024
+
+1. ACCEPTED INSURANCE PROVIDERS
+  The hospital is in-network with: BlueCross BlueShield, Aetna, UnitedHealth Group,
+  Cigna, Humana, Medicare (Parts A & B), and Medicaid. Patients with other insurers
+  are treated as out-of-network; pre-payment or financial guarantee may be required.
+
+2. PRE-AUTHORISATION PROCESS
+  Step 1: Physician submits clinical justification to the insurance provider.
+  Step 2: Insurance reviews and responds within 3 business days (urgent: 24 hours).
+  Step 3: Authorisation number is recorded in the patient's file.
+  Step 4: Procedure is scheduled only after written authorisation is received.
+
+3. SURGERY PRE-AUTHORISATION
+  Prior authorisation is MANDATORY for all surgical procedures, including:
+  - Cardiac surgery and catheterisation
+  - Orthopaedic surgery (joint replacement, spinal)
+  - General surgery (appendectomy, cholecystectomy, hernia repair)
+  - Bariatric surgery (requires additional documentation of BMI and prior treatment)
+  - Neurosurgery (pre-auth + second opinion required)
+  Emergency surgery is exempt; retrospective authorisation is obtained within 24 hours.
+
+4. INSURANCE VERIFICATION
+  Insurance eligibility is verified electronically at admission and again 24 hours
+  before elective procedures. Patients must notify the hospital of any insurance
+  changes at least 48 hours before scheduled procedures.
+
+5. DENIAL MANAGEMENT
+  If insurance denies a claim:
+  - Hospital files a first-level appeal within 15 days
+  - Clinical staff provide additional supporting documentation
+  - If denied again, an external independent review is requested
+  - Patients are notified of all decisions within 5 business days
+
+6. CO-PAY AND DEDUCTIBLE COLLECTION
+  Co-pays are collected at registration. Annual deductible balances are estimated
+  and collected upfront for elective procedures. Estimates may vary from final bill
+  based on actual services rendered.

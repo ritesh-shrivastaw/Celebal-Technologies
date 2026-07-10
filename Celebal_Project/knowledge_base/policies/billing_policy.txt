@@ -1,0 +1,34 @@
+HOSPITAL BILLING AND FINANCIAL POLICY — Version 2.8 | Effective: March 2024
+
+1. BILLING OVERVIEW
+The hospital provides an itemised bill for all services rendered. Bills are generated
+within 7 business days of discharge. Patients may request an itemised statement at
+any time during or after their stay.
+
+2. INSURANCE BILLING
+  2.1 In-Network Claims: Submitted automatically within 5 business days of discharge.
+      Patients are responsible only for co-pay, co-insurance, and deductible amounts.
+  2.2 Out-of-Network Claims: Patient is responsible for the full amount upfront;
+      the hospital will provide a superbill for independent reimbursement claims.
+  2.3 Medicare and Medicaid: Billed according to CMS guidelines. Any balance billing
+      is prohibited for Medicare Advantage and Medicaid patients.
+
+3. PAYMENT OPTIONS
+  - Full payment at discharge (5% prompt-pay discount applies)
+  - Payment plans: 0% interest for balances under $5,000 paid within 12 months
+  - Financial hardship: Charity care available for patients below 250% federal
+    poverty line. Applications must be submitted within 90 days of discharge.
+
+4. PRIOR AUTHORISATION REQUIREMENTS
+  Prior insurance authorisation is REQUIRED for:
+  - All elective surgical procedures
+  - MRI, CT scans, and PET scans (non-emergency)
+  - Extended inpatient stays beyond 5 days
+  - Specialist referrals outside the primary network
+  - Durable medical equipment (DME) over $500
+  Prior auth is NOT required for emergency services, lab tests, or routine X-rays.
+
+5. DISPUTE RESOLUTION
+  Billing disputes must be submitted in writing within 60 days of receiving the bill.
+  The hospital will respond within 30 days. Unresolved disputes may be escalated to
+  the Patient Financial Advocate.

@@ -1,0 +1,33 @@
+EMERGENCY SERVICES POLICY — Version 5.0 | Effective: January 2024
+
+1. EMERGENCY TRIAGE PROTOCOL
+  All patients presenting to the Emergency Department (ED) are triaged using the
+  Emergency Severity Index (ESI) 5-level triage system:
+  - ESI 1 (Immediate): Life-threatening; immediate physician assessment
+  - ESI 2 (Emergent): High risk; assessed within 15 minutes
+  - ESI 3 (Urgent): Stable but requires multiple resources; wait up to 30 minutes
+  - ESI 4 (Less Urgent): Single resource needed; assessed within 60 minutes
+  - ESI 5 (Non-Urgent): Minimal resources; may be redirected to urgent care
+
+2. NO-REFUSAL POLICY
+  Under EMTALA (Emergency Medical Treatment and Labor Act), the hospital must
+  provide a medical screening exam to any individual requesting emergency care,
+  regardless of insurance status, ability to pay, national origin, or citizenship.
+
+3. EMERGENCY ADMISSION PROCESS
+  - Registration and triage occur simultaneously for ESI 1 and 2 patients
+  - Consent is implied for unconscious or incapacitated patients
+  - Family notification is attempted within 2 hours of admission
+  - No prior authorisation is required for emergency treatment
+  - Retrospective authorisation from insurance is obtained within 24 hours
+
+4. CRITICAL CARE PROTOCOLS
+  - Code Blue (Cardiac Arrest): Rapid Response Team dispatched immediately
+  - Stroke Protocol: CT scan within 25 minutes; thrombolytics within 60 minutes
+  - Trauma Protocol: Trauma team activation for major injuries
+  - Sepsis Bundle: Initiated for patients meeting sepsis criteria within 1 hour
+
+5. TRANSFER POLICY
+  Patients requiring specialised care not available at this facility are transferred
+  after stabilisation. Receiving facility must confirm acceptance before transfer.
+  All transfers are documented with a Transfer Summary and signed consent.

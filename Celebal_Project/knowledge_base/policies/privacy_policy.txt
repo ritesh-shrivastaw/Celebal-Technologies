@@ -1,0 +1,28 @@
+PATIENT PRIVACY AND DATA PROTECTION POLICY — Version 2.3 | Effective: January 2024
+
+1. HIPAA COMPLIANCE
+  This hospital complies fully with the Health Insurance Portability and
+  Accountability Act (HIPAA). All Protected Health Information (PHI) is safeguarded
+  through administrative, physical, and technical controls.
+
+2. PERMITTED DISCLOSURES
+  Patient information may be shared without explicit consent for:
+  - Treatment by authorised healthcare providers
+  - Payment processing with insurance providers
+  - Healthcare operations (quality reviews, audits)
+  - Public health reporting as required by law
+  - Compliance with court orders or law enforcement requests
+
+3. PATIENT RIGHTS UNDER HIPAA
+  - Right to access and receive copies of medical records
+  - Right to request amendments to records
+  - Right to receive an accounting of disclosures
+  - Right to restrict certain disclosures
+  - Right to receive confidential communications
+
+4. DATA BREACH PROTOCOL
+  In the event of a data breach involving PHI:
+  - Affected patients are notified within 60 days of discovery
+  - HHS Office for Civil Rights is notified within 60 days
+  - If more than 500 individuals affected, media notification is required
+  - Incident is logged and root cause analysis conducted within 30 days

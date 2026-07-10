@@ -1,0 +1,292 @@
+[
+  {
+    "id": "SQL-01",
+    "description": "Count patients with Diabetes condition",
+    "query": "How many diabetic patients are there?",
+    "passed": true,
+    "checks": {
+      "type_correct": true,
+      "sql_keywords": true,
+      "has_rows": true
+    },
+    "sql": "SELECT COUNT(*) as count FROM patients p JOIN clinical_data c ON p.patient_id = c.patient_id WHERE LOWER(c.medical_condition) LIKE LOWER('%diabetes%')",
+    "rows": 1,
+    "latency_ms": 13.9,
+    "category": "SQL"
+  },
+  {
+    "id": "SQL-02",
+    "description": "List patients with abnormal test results",
+    "query": "Which patients have abnormal test results?",
+    "passed": true,
+    "checks": {
+      "type_correct": true,
+      "sql_keywords": true,
+      "has_rows": true
+    },
+    "sql": "SELECT p.name, p.age, c.medical_condition, c.test_results FROM patients p JOIN clinical_data c ON p.patient_id = c.patient_id WHERE c.test_results = 'Abnormal' LIMIT 20",
+    "rows": 20,
+    "latency_ms": 6.1,
+    "category": "SQL"
+  },
+  {
+    "id": "SQL-03",
+    "description": "Aggregate billing by insurance group",
+    "query": "Show the average billing amount by insurance provider",
+    "passed": true,
+    "checks": {
+      "type_correct": true,
+      "sql_keywords": true,
+      "has_rows": true
+    },
+    "sql": "SELECT b.insurance_provider, ROUND(AVG(b.billing_amount),2) as avg_billing, COUNT(*) as patient_count FROM billing b GROUP BY b.insurance_provider ORDER BY avg_billing DESC",
+    "rows": 7,
+    "latency_ms": 4.0,
+    "category": "SQL"
+  },
+  {
+    "id": "SQL-04",
+    "description": "Count emergency admissions",
+    "query": "How many emergency admissions are there?",
+    "passed": true,
+    "checks": {
+      "type_correct": true,
+      "sql_keywords": true,
+      "has_rows": true
+    },
+    "sql": "SELECT COUNT(*) as emergency_count FROM admissions WHERE admission_type = 'Emergency'",
+    "rows": 1,
+    "latency_ms": 2.0,
+    "category": "SQL"
+  },
+  {
+    "id": "SQL-05",
+    "description": "Top medical condition by frequency",
+    "query": "What is the most common medical condition?",
+    "passed": true,
+    "checks": {
+      "type_correct": true,
+      "sql_keywords": true,
+      "has_rows": true
+    },
+    "sql": "SELECT medical_condition, COUNT(*) as count FROM clinical_data GROUP BY medical_condition ORDER BY count DESC LIMIT 10",
+    "rows": 10,
+    "latency_ms": 6.8,
+    "category": "SQL"
+  },
+  {
+    "id": "SQL-06",
+    "description": "Gender breakdown of patient population",
+    "query": "Show gender distribution of patients",
+    "passed": true,
+    "checks": {
+      "type_correct": true,
+      "sql_keywords": true,
+      "has_rows": true
+    },
+    "sql": "SELECT gender, COUNT(*) as count FROM patients GROUP BY gender",
+    "rows": 3,
+    "latency_ms": 5.5,
+    "category": "SQL"
+  },
+  {
+    "id": "SQL-07",
+    "description": "Mean patient age",
+    "query": "What is the average age of patients?",
+    "passed": true,
+    "checks": {
+      "type_correct": true,
+      "sql_keywords": true,
+      "has_rows": true
+    },
+    "sql": "SELECT ROUND(AVG(age),1) as average_age FROM patients",
+    "rows": 1,
+    "latency_ms": 2.3,
+    "category": "SQL"
+  },
+  {
+    "id": "SQL-08",
+    "description": "Patient distribution across hospitals",
+    "query": "How many patients are at each hospital?",
+    "passed": true,
+    "checks": {
+      "type_correct": true,
+      "sql_keywords": true,
+      "has_rows": true
+    },
+    "sql": "SELECT hospital, COUNT(*) as patient_count FROM admissions GROUP BY hospital ORDER BY patient_count DESC",
+    "rows": 6,
+    "latency_ms": 7.8,
+    "category": "SQL"
+  },
+  {
+    "id": "RAG-01",
+    "description": "Core discharge policy retrieval",
+    "query": "What is the hospital discharge policy?",
+    "passed": true,
+    "checks": {
+      "source_match": true,
+      "keywords_in_chunks": true,
+      "has_answer": true
+    },
+    "sources": [
+      "discharge_policy.txt",
+      "emergency_policy.txt",
+      "billing_policy.txt",
+      "privacy_policy.txt"
+    ],
+    "relevance": 1.0,
+    "latency_ms": 4.0,
+    "category": "RAG"
+  },
+  {
+    "id": "RAG-02",
+    "description": "Pre-auth for surgical procedures",
+    "query": "Is prior insurance authorisation required for surgery?",
+    "passed": true,
+    "checks": {
+      "source_match": true,
+      "keywords_in_chunks": true,
+      "has_answer": true
+    },
+    "sources": [
+      "billing_policy.txt",
+      "emergency_policy.txt",
+      "insurance_policy.txt",
+      "admission_policy.txt"
+    ],
+    "relevance": 1.0,
+    "latency_ms": 2.0,
+    "category": "RAG"
+  },
+  {
+    "id": "RAG-03",
+    "description": "Emergency triage ESI protocol",
+    "query": "What is the emergency triage protocol?",
+    "passed": true,
+    "checks": {
+      "source_match": true,
+      "keywords_in_chunks": true,
+      "has_answer": true
+    },
+    "sources": [
+      "privacy_policy.txt",
+      "admission_policy.txt",
+      "billing_policy.txt",
+      "emergency_policy.txt"
+    ],
+    "relevance": 1.0,
+    "latency_ms": 0.0,
+    "category": "RAG"
+  },
+  {
+    "id": "RAG-04",
+    "description": "HIPAA patient rights retrieval",
+    "query": "What are patient rights under HIPAA?",
+    "passed": true,
+    "checks": {
+      "source_match": true,
+      "keywords_in_chunks": true,
+      "has_answer": true
+    },
+    "sources": [
+      "emergency_policy.txt",
+      "billing_policy.txt",
+      "admission_policy.txt",
+      "privacy_policy.txt"
+    ],
+    "relevance": 1.0,
+    "latency_ms": 0.0,
+    "category": "RAG"
+  },
+  {
+    "id": "RAG-05",
+    "description": "Billing dispute resolution",
+    "query": "How does the billing dispute process work?",
+    "passed": true,
+    "checks": {
+      "source_match": true,
+      "keywords_in_chunks": true,
+      "has_answer": true
+    },
+    "sources": [
+      "billing_policy.txt",
+      "discharge_policy.txt",
+      "emergency_policy.txt",
+      "insurance_policy.txt"
+    ],
+    "relevance": 1.0,
+    "latency_ms": 0.0,
+    "category": "RAG"
+  },
+  {
+    "id": "RAG-06",
+    "description": "Admission documentation requirements",
+    "query": "What documents are required for hospital admission?",
+    "passed": true,
+    "checks": {
+      "source_match": true,
+      "keywords_in_chunks": true,
+      "has_answer": true
+    },
+    "sources": [
+      "insurance_policy.txt",
+      "discharge_policy.txt",
+      "admission_policy.txt",
+      "emergency_policy.txt"
+    ],
+    "relevance": 1.0,
+    "latency_ms": 0.0,
+    "category": "RAG"
+  },
+  {
+    "id": "AMB-01",
+    "description": "Ambiguous name query \u2014 should not crash",
+    "query": "Tell me about John",
+    "passed": true,
+    "error": null,
+    "response_len": 127,
+    "latency_ms": 2.0,
+    "category": "Ambiguous"
+  },
+  {
+    "id": "AMB-02",
+    "description": "Out-of-domain query \u2014 should return fallback",
+    "query": "What is the weather today?",
+    "passed": true,
+    "error": null,
+    "response_len": 734,
+    "latency_ms": 0.0,
+    "category": "Ambiguous"
+  },
+  {
+    "id": "AMB-03",
+    "description": "Empty query \u2014 graceful handling",
+    "query": "",
+    "passed": true,
+    "error": null,
+    "response_len": 24,
+    "latency_ms": 0.0,
+    "category": "Ambiguous"
+  },
+  {
+    "id": "AMB-04",
+    "description": "Vague over-broad query",
+    "query": "Show me everything",
+    "passed": true,
+    "error": null,
+    "response_len": 73,
+    "latency_ms": 0.0,
+    "category": "Ambiguous"
+  },
+  {
+    "id": "AMB-05",
+    "description": "Garbage/special char input",
+    "query": "!!!???",
+    "passed": true,
+    "error": null,
+    "response_len": 127,
+    "latency_ms": 0.0,
+    "category": "Ambiguous"
+  }
+]

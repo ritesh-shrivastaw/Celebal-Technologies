@@ -1,0 +1,86 @@
+2026-07-10 11:48:30,043 | INFO | INTENT | query='How many diabetic patients are there?' | db=3 | policy=0 | \u2192 database
+2026-07-10 11:48:30,043 | INFO | INTENT | query='How many diabetic patients are there?' | db=3 | policy=0 | \u2192 database
+2026-07-10 11:48:30,055 | INFO | SQL | query='how many diabetes patients are there?' | sql='SELECT COUNT(*) as count FROM patients p JOIN clinical_data c ON p.patient_id = ' | rows=1
+2026-07-10 11:48:30,055 | INFO | ROUTING | {"query": "How many diabetic patients are there?", "intent": "database", "timestamp": "2026-07-10T11:48:30.043873", "agent_used": "NLPtoSQLAgent"}
+2026-07-10 11:48:30,055 | INFO | INTENT | query='Which patients have abnormal test results?' | db=4 | policy=0 | \u2192 database
+2026-07-10 11:48:30,055 | INFO | INTENT | query='Which patients have abnormal test results?' | db=4 | policy=0 | \u2192 database
+2026-07-10 11:48:30,061 | INFO | SQL | query='which patients have abnormal test results?' | sql='SELECT p.name, p.age, c.medical_condition, c.test_results FROM patients p JOIN c' | rows=20
+2026-07-10 11:48:30,061 | INFO | ROUTING | {"query": "Which patients have abnormal test results?", "intent": "database", "timestamp": "2026-07-10T11:48:30.055878", "agent_used": "NLPtoSQLAgent"}
+2026-07-10 11:48:30,061 | INFO | INTENT | query='Show the average billing amount by insurance provider.' | db=3 | policy=0 | \u2192 database
+2026-07-10 11:48:30,061 | INFO | INTENT | query='Show the average billing amount by insurance provider.' | db=3 | policy=0 | \u2192 database
+2026-07-10 11:48:30,067 | INFO | SQL | query='show the average billing amount by insurance provider.' | sql='SELECT b.insurance_provider, ROUND(AVG(b.billing_amount),2) as avg_billing, COUN' | rows=7
+2026-07-10 11:48:30,067 | INFO | ROUTING | {"query": "Show the average billing amount by insurance provider.", "intent": "database", "timestamp": "2026-07-10T11:48:30.061739", "agent_used": "NLPtoSQLAgent"}
+2026-07-10 11:48:30,067 | INFO | INTENT | query='What is the hospital discharge policy?' | strong_policy \u2192 policy
+2026-07-10 11:48:30,067 | INFO | INTENT | query='What is the hospital discharge policy?' | strong_policy \u2192 policy
+2026-07-10 11:48:30,107 | INFO | RAG | query='What is the hospital discharge policy?' | sources=['privacy_policy.txt', 'emergency_policy.txt', 'discharge_policy.txt', 'billing_policy.txt'] | chunks=4
+2026-07-10 11:48:30,107 | INFO | ROUTING | {"query": "What is the hospital discharge policy?", "intent": "policy", "timestamp": "2026-07-10T11:48:30.067882", "agent_used": "RAGAgent"}
+2026-07-10 11:48:30,107 | INFO | INTENT | query='Is prior insurance authorisation required for surgery?' | strong_policy \u2192 policy
+2026-07-10 11:48:30,107 | INFO | INTENT | query='Is prior insurance authorisation required for surgery?' | strong_policy \u2192 policy
+2026-07-10 11:48:30,116 | INFO | RAG | query='Is prior insurance authorisation required for surgery?' | sources=['emergency_policy.txt', 'billing_policy.txt', 'admission_policy.txt', 'insurance_policy.txt'] | chunks=4
+2026-07-10 11:48:30,116 | INFO | ROUTING | {"query": "Is prior insurance authorisation required for surgery?", "intent": "policy", "timestamp": "2026-07-10T11:48:30.107901", "agent_used": "RAGAgent"}
+2026-07-10 11:49:01,351 | INFO | SQL | query='how many diabetes patients are there?' | sql='SELECT COUNT(*) as count FROM patients p JOIN clinical_data c ON p.patient_id = ' | rows=1
+2026-07-10 11:49:01,360 | INFO | SQL | query='which patients have abnormal test results?' | sql='SELECT p.name, p.age, c.medical_condition, c.test_results FROM patients p JOIN c' | rows=20
+2026-07-10 11:49:01,364 | INFO | SQL | query='show the average billing amount by insurance provider' | sql='SELECT b.insurance_provider, ROUND(AVG(b.billing_amount),2) as avg_billing, COUN' | rows=7
+2026-07-10 11:49:01,368 | INFO | SQL | query='how many emergency admissions are there?' | sql='SELECT COUNT(*) as emergency_count FROM admissions WHERE admission_type = 'Emerg' | rows=1
+2026-07-10 11:49:01,374 | INFO | SQL | query='what is the most common medical condition?' | sql='SELECT medical_condition, COUNT(*) as count FROM clinical_data GROUP BY medical_' | rows=10
+2026-07-10 11:49:01,380 | INFO | SQL | query='show gender distribution of patients' | sql='SELECT gender, COUNT(*) as count FROM patients GROUP BY gender' | rows=3
+2026-07-10 11:49:01,382 | INFO | SQL | query='what is the average age of patients?' | sql='SELECT ROUND(AVG(age),1) as average_age FROM patients' | rows=1
+2026-07-10 11:49:01,390 | INFO | SQL | query='how many patients are at each hospital?' | sql='SELECT hospital, COUNT(*) as patient_count FROM admissions GROUP BY hospital ORD' | rows=6
+2026-07-10 11:49:01,394 | INFO | RAG | query='What is the hospital discharge policy?' | sources=['discharge_policy.txt', 'emergency_policy.txt', 'billing_policy.txt', 'privacy_policy.txt'] | chunks=4
+2026-07-10 11:49:01,396 | INFO | RAG | query='Is prior insurance authorisation required for surgery?' | sources=['billing_policy.txt', 'emergency_policy.txt', 'insurance_policy.txt', 'admission_policy.txt'] | chunks=4
+2026-07-10 11:49:01,396 | INFO | RAG | query='What is the emergency triage protocol?' | sources=['privacy_policy.txt', 'admission_policy.txt', 'billing_policy.txt', 'emergency_policy.txt'] | chunks=4
+2026-07-10 11:49:01,398 | INFO | RAG | query='What are patient rights under HIPAA?' | sources=['emergency_policy.txt', 'billing_policy.txt', 'admission_policy.txt', 'privacy_policy.txt'] | chunks=4
+2026-07-10 11:49:01,398 | INFO | RAG | query='How does the billing dispute process work?' | sources=['billing_policy.txt', 'discharge_policy.txt', 'emergency_policy.txt', 'insurance_policy.txt'] | chunks=4
+2026-07-10 11:49:01,400 | INFO | RAG | query='What documents are required for hospital admission?' | sources=['insurance_policy.txt', 'discharge_policy.txt', 'admission_policy.txt', 'emergency_policy.txt'] | chunks=4
+2026-07-10 11:49:01,400 | INFO | INTENT | query='Tell me about John' | db=0 | policy=0 | \u2192 unknown
+2026-07-10 11:49:01,402 | INFO | ROUTING | {"query": "Tell me about John", "intent": "unknown", "timestamp": "2026-07-10T11:49:01.402407", "agent_used": "Fallback"}
+2026-07-10 11:49:01,402 | INFO | INTENT | query='What is the weather today?' | db=0 | policy=1 | \u2192 policy
+2026-07-10 11:49:01,402 | INFO | RAG | query='What is the weather today?' | sources=['insurance_policy.txt', 'discharge_policy.txt', 'emergency_policy.txt', 'privacy_policy.txt'] | chunks=4
+2026-07-10 11:49:01,402 | INFO | ROUTING | {"query": "What is the weather today?", "intent": "policy", "timestamp": "2026-07-10T11:49:01.402407", "agent_used": "RAGAgent"}
+2026-07-10 11:49:01,402 | INFO | INTENT | query='Show me everything' | db=1 | policy=0 | \u2192 database
+2026-07-10 11:49:01,402 | INFO | ROUTING | {"query": "Show me everything", "intent": "database", "timestamp": "2026-07-10T11:49:01.402407", "agent_used": "NLPtoSQLAgent"}
+2026-07-10 11:49:01,404 | INFO | INTENT | query='!!!???' | db=0 | policy=0 | \u2192 unknown
+2026-07-10 11:49:01,404 | INFO | ROUTING | {"query": "!!!???", "intent": "unknown", "timestamp": "2026-07-10T11:49:01.404414", "agent_used": "Fallback"}
+2026-07-10 11:50:07,503 | INFO | INTENT | query='How many diabetic patients are there?' | db=3 | policy=0 | \u2192 database
+2026-07-10 11:50:07,503 | INFO | INTENT | query='How many diabetic patients are there?' | db=3 | policy=0 | \u2192 database
+2026-07-10 11:50:07,512 | INFO | SQL | query='how many diabetes patients are there?' | sql='SELECT COUNT(*) as count FROM patients p JOIN clinical_data c ON p.patient_id = ' | rows=1
+2026-07-10 11:50:07,512 | INFO | ROUTING | {"query": "How many diabetic patients are there?", "intent": "database", "timestamp": "2026-07-10T11:50:07.503764", "agent_used": "NLPtoSQLAgent"}
+2026-07-10 11:50:07,512 | INFO | INTENT | query='Which patients have abnormal test results?' | db=4 | policy=0 | \u2192 database
+2026-07-10 11:50:07,512 | INFO | INTENT | query='Which patients have abnormal test results?' | db=4 | policy=0 | \u2192 database
+2026-07-10 11:50:07,526 | INFO | SQL | query='which patients have abnormal test results?' | sql='SELECT p.name, p.age, c.medical_condition, c.test_results FROM patients p JOIN c' | rows=20
+2026-07-10 11:50:07,526 | INFO | ROUTING | {"query": "Which patients have abnormal test results?", "intent": "database", "timestamp": "2026-07-10T11:50:07.512901", "agent_used": "NLPtoSQLAgent"}
+2026-07-10 11:50:07,526 | INFO | INTENT | query='Show the average billing amount by insurance provider.' | db=3 | policy=0 | \u2192 database
+2026-07-10 11:50:07,526 | INFO | INTENT | query='Show the average billing amount by insurance provider.' | db=3 | policy=0 | \u2192 database
+2026-07-10 11:50:07,529 | INFO | SQL | query='show the average billing amount by insurance provider.' | sql='SELECT b.insurance_provider, ROUND(AVG(b.billing_amount),2) as avg_billing, COUN' | rows=7
+2026-07-10 11:50:07,529 | INFO | ROUTING | {"query": "Show the average billing amount by insurance provider.", "intent": "database", "timestamp": "2026-07-10T11:50:07.526658", "agent_used": "NLPtoSQLAgent"}
+2026-07-10 11:50:07,529 | INFO | INTENT | query='What is the hospital discharge policy?' | strong_policy \u2192 policy
+2026-07-10 11:50:07,529 | INFO | INTENT | query='What is the hospital discharge policy?' | strong_policy \u2192 policy
+2026-07-10 11:50:07,574 | INFO | RAG | query='What is the hospital discharge policy?' | sources=['billing_policy.txt', 'emergency_policy.txt', 'privacy_policy.txt', 'discharge_policy.txt'] | chunks=4
+2026-07-10 11:50:07,576 | INFO | ROUTING | {"query": "What is the hospital discharge policy?", "intent": "policy", "timestamp": "2026-07-10T11:50:07.529629", "agent_used": "RAGAgent"}
+2026-07-10 11:50:07,576 | INFO | INTENT | query='Is prior insurance authorisation required for surgery?' | strong_policy \u2192 policy
+2026-07-10 11:50:07,576 | INFO | INTENT | query='Is prior insurance authorisation required for surgery?' | strong_policy \u2192 policy
+2026-07-10 11:50:07,579 | INFO | RAG | query='Is prior insurance authorisation required for surgery?' | sources=['billing_policy.txt', 'emergency_policy.txt', 'admission_policy.txt', 'insurance_policy.txt'] | chunks=4
+2026-07-10 11:50:07,579 | INFO | ROUTING | {"query": "Is prior insurance authorisation required for surgery?", "intent": "policy", "timestamp": "2026-07-10T11:50:07.576597", "agent_used": "RAGAgent"}
+2026-07-10 11:50:42,895 | INFO | SQL | query='how many diabetes patients are there?' | sql='SELECT COUNT(*) as count FROM patients p JOIN clinical_data c ON p.patient_id = ' | rows=1
+2026-07-10 11:50:42,903 | INFO | SQL | query='which patients have abnormal test results?' | sql='SELECT p.name, p.age, c.medical_condition, c.test_results FROM patients p JOIN c' | rows=20
+2026-07-10 11:50:42,911 | INFO | SQL | query='show the average billing amount by insurance provider' | sql='SELECT b.insurance_provider, ROUND(AVG(b.billing_amount),2) as avg_billing, COUN' | rows=7
+2026-07-10 11:50:42,911 | INFO | SQL | query='how many emergency admissions are there?' | sql='SELECT COUNT(*) as emergency_count FROM admissions WHERE admission_type = 'Emerg' | rows=1
+2026-07-10 11:50:42,920 | INFO | SQL | query='what is the most common medical condition?' | sql='SELECT medical_condition, COUNT(*) as count FROM clinical_data GROUP BY medical_' | rows=10
+2026-07-10 11:50:42,920 | INFO | SQL | query='show gender distribution of patients' | sql='SELECT gender, COUNT(*) as count FROM patients GROUP BY gender' | rows=3
+2026-07-10 11:50:42,928 | INFO | SQL | query='what is the average age of patients?' | sql='SELECT ROUND(AVG(age),1) as average_age FROM patients' | rows=1
+2026-07-10 11:50:42,928 | INFO | SQL | query='how many patients are at each hospital?' | sql='SELECT hospital, COUNT(*) as patient_count FROM admissions GROUP BY hospital ORD' | rows=6
+2026-07-10 11:50:42,936 | INFO | RAG | query='What is the hospital discharge policy?' | sources=['billing_policy.txt', 'privacy_policy.txt', 'emergency_policy.txt', 'discharge_policy.txt'] | chunks=4
+2026-07-10 11:50:42,938 | INFO | RAG | query='Is prior insurance authorisation required for surgery?' | sources=['billing_policy.txt', 'admission_policy.txt', 'emergency_policy.txt', 'insurance_policy.txt'] | chunks=4
+2026-07-10 11:50:42,940 | INFO | RAG | query='What is the emergency triage protocol?' | sources=['admission_policy.txt', 'privacy_policy.txt', 'emergency_policy.txt', 'billing_policy.txt'] | chunks=4
+2026-07-10 11:50:42,940 | INFO | RAG | query='What are patient rights under HIPAA?' | sources=['admission_policy.txt', 'privacy_policy.txt', 'emergency_policy.txt', 'billing_policy.txt'] | chunks=4
+2026-07-10 11:50:42,940 | INFO | RAG | query='How does the billing dispute process work?' | sources=['discharge_policy.txt', 'insurance_policy.txt', 'emergency_policy.txt', 'billing_policy.txt'] | chunks=4
+2026-07-10 11:50:42,944 | INFO | RAG | query='What documents are required for hospital admission?' | sources=['discharge_policy.txt', 'admission_policy.txt', 'emergency_policy.txt', 'insurance_policy.txt'] | chunks=4
+2026-07-10 11:50:42,944 | INFO | INTENT | query='Tell me about John' | db=0 | policy=0 | \u2192 unknown
+2026-07-10 11:50:42,944 | INFO | ROUTING | {"query": "Tell me about John", "intent": "unknown", "timestamp": "2026-07-10T11:50:42.944877", "agent_used": "Fallback"}
+2026-07-10 11:50:42,944 | INFO | INTENT | query='What is the weather today?' | db=0 | policy=1 | \u2192 policy
+2026-07-10 11:50:42,944 | INFO | RAG | query='What is the weather today?' | sources=['discharge_policy.txt', 'privacy_policy.txt', 'emergency_policy.txt', 'insurance_policy.txt'] | chunks=4
+2026-07-10 11:50:42,944 | INFO | ROUTING | {"query": "What is the weather today?", "intent": "policy", "timestamp": "2026-07-10T11:50:42.944877", "agent_used": "RAGAgent"}
+2026-07-10 11:50:42,944 | INFO | INTENT | query='Show me everything' | db=1 | policy=0 | \u2192 database
+2026-07-10 11:50:42,944 | INFO | ROUTING | {"query": "Show me everything", "intent": "database", "timestamp": "2026-07-10T11:50:42.944877", "agent_used": "NLPtoSQLAgent"}
+2026-07-10 11:50:42,944 | INFO | INTENT | query='!!!???' | db=0 | policy=0 | \u2192 unknown
+2026-07-10 11:50:42,944 | INFO | ROUTING | {"query": "!!!???", "intent": "unknown", "timestamp": "2026-07-10T11:50:42.944877", "agent_used": "Fallback"}

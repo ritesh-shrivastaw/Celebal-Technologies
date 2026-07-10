@@ -1,0 +1,36 @@
+PATIENT DISCHARGE POLICY — Version 4.1 | Effective: January 2024
+
+1. DISCHARGE CRITERIA
+  A patient is eligible for discharge when:
+  - The attending physician certifies medical stability
+  - Vital signs are within acceptable parameters for 24 hours
+  - The patient or caregiver demonstrates understanding of home care instructions
+  - Appropriate follow-up appointments are scheduled
+  - Prescriptions and discharge medications are prepared
+
+2. DISCHARGE PLANNING PROCESS
+  Discharge planning begins at admission. The multidisciplinary team (physician,
+  nurse, case manager, social worker) collaborates to develop a discharge plan.
+  Plans are reviewed daily and updated based on clinical progress.
+
+3. DISCHARGE AGAINST MEDICAL ADVICE (AMA)
+  Patients have the right to leave at any time. If leaving AMA:
+  - Patient must sign the AMA form acknowledging associated risks
+  - Physician must document the discussion and patient's decision
+  - Insurance may deny coverage for complications arising from AMA discharge
+  - Hospital is not liable for adverse outcomes following AMA discharge
+
+4. DISCHARGE INSTRUCTIONS
+  All patients receive written discharge instructions covering:
+  - Medication schedule and dosage
+  - Activity restrictions and diet
+  - Wound care instructions (if applicable)
+  - Warning signs requiring immediate return to ER
+  - Follow-up appointment schedule
+
+5. APPEAL PROCESS
+  If a patient disagrees with the discharge decision, they may:
+  - Request a physician review within 24 hours
+  - Contact the Patient Advocate for assistance
+  - File an appeal with their insurance company
+  - Request a Peer Review from a second attending physician

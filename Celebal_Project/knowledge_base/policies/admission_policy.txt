@@ -1,0 +1,34 @@
+HOSPITAL ADMISSION POLICY — Version 3.2 | Effective: January 2024
+
+1. GENERAL ADMISSION PROCEDURES
+All patients must present a valid government-issued photo ID and insurance card at
+the time of admission. Patients without insurance must complete a financial assessment
+before elective procedures. Emergency admissions are processed immediately regardless
+of insurance status, and financial documentation may be completed post-stabilisation.
+
+2. ADMISSION TYPES
+  2.1 Emergency Admission: Patients arriving via emergency services or walk-in with
+      life-threatening conditions are admitted immediately. No pre-authorisation
+      required. The attending physician determines admission necessity.
+  2.2 Elective Admission: Scheduled procedures require pre-authorisation from the
+      insurance provider at least 72 hours in advance. Patients must complete
+      pre-admission testing (PAT) within 30 days of the scheduled procedure.
+  2.3 Urgent Admission: Conditions requiring treatment within 24–48 hours. Verbal
+      pre-authorisation from insurer must be obtained within 8 hours of admission.
+
+3. REQUIRED DOCUMENTATION
+  - Government-issued photo ID
+  - Insurance card and policy number
+  - Referral letter (for specialist admissions)
+  - Previous medical records (if available)
+  - Advance directive or healthcare proxy (if applicable)
+
+4. PAEDIATRIC ADMISSIONS
+  Children under 18 must be accompanied by a parent or legal guardian who must
+  provide written consent for treatment. In cases of emergency, treatment proceeds
+  without consent if the guardian is unreachable.
+
+5. PATIENT RIGHTS ON ADMISSION
+  Every patient has the right to be informed of their diagnosis and proposed
+  treatment plan, to accept or refuse treatment, to privacy and confidentiality,
+  and to access their medical records within 30 days of request.
