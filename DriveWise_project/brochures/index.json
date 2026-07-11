@@ -1,0 +1,62 @@
+[
+  {
+    "brand": "Hyundai",
+    "model": "Creta",
+    "file": "C:\\Users\\rites\\OneDrive\\Desktop\\Celebal-Technology\\DriveWise_project\\brochures\\Hyundai\\Creta.json"
+  },
+  {
+    "brand": "Hyundai",
+    "model": "i20",
+    "file": "C:\\Users\\rites\\OneDrive\\Desktop\\Celebal-Technology\\DriveWise_project\\brochures\\Hyundai\\i20.json"
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Verna",
+    "file": "C:\\Users\\rites\\OneDrive\\Desktop\\Celebal-Technology\\DriveWise_project\\brochures\\Hyundai\\Verna.json"
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Swift",
+    "file": "C:\\Users\\rites\\OneDrive\\Desktop\\Celebal-Technology\\DriveWise_project\\brochures\\Maruti_Suzuki\\Swift.json"
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Brezza",
+    "file": "C:\\Users\\rites\\OneDrive\\Desktop\\Celebal-Technology\\DriveWise_project\\brochures\\Maruti_Suzuki\\Brezza.json"
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Ertiga",
+    "file": "C:\\Users\\rites\\OneDrive\\Desktop\\Celebal-Technology\\DriveWise_project\\brochures\\Maruti_Suzuki\\Ertiga.json"
+  },
+  {
+    "brand": "Tata",
+    "model": "Nexon",
+    "file": "C:\\Users\\rites\\OneDrive\\Desktop\\Celebal-Technology\\DriveWise_project\\brochures\\Tata\\Nexon.json"
+  },
+  {
+    "brand": "Tata",
+    "model": "Harrier",
+    "file": "C:\\Users\\rites\\OneDrive\\Desktop\\Celebal-Technology\\DriveWise_project\\brochures\\Tata\\Harrier.json"
+  },
+  {
+    "brand": "Tata",
+    "model": "Punch",
+    "file": "C:\\Users\\rites\\OneDrive\\Desktop\\Celebal-Technology\\DriveWise_project\\brochures\\Tata\\Punch.json"
+  },
+  {
+    "brand": "Mahindra",
+    "model": "Scorpio-N",
+    "file": "C:\\Users\\rites\\OneDrive\\Desktop\\Celebal-Technology\\DriveWise_project\\brochures\\Mahindra\\Scorpio-N.json"
+  },
+  {
+    "brand": "Mahindra",
+    "model": "XUV 3XO",
+    "file": "C:\\Users\\rites\\OneDrive\\Desktop\\Celebal-Technology\\DriveWise_project\\brochures\\Mahindra\\XUV_3XO.json"
+  },
+  {
+    "brand": "Mahindra",
+    "model": "Thar",
+    "file": "C:\\Users\\rites\\OneDrive\\Desktop\\Celebal-Technology\\DriveWise_project\\brochures\\Mahindra\\Thar.json"
+  }
+]
